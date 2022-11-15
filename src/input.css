@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: Cabinet Grotesk,sans-serif;
+}
+
+@layer components {
+  .btn {
+    @apply border-2 rounded-full inline-block items-center justify-center font-medium leading-normal text-center;
+  }
+
+  .btn-primary {
+    @apply border-primary bg-primary px-4 py-2 !text-white;
+  }
+
+  .btn-secondary {
+    @apply border-white bg-white px-4 py-2 text-[#6b7280];
+  }
+
+  .btn-category {
+    @apply relative inline-flex font-semibold text-sm text-grey leading-[1.5715] pr-[0.375rem] pl-3 py-[0.375rem] border rounded-full m-[0.375rem];
+  }
+
+  .category-badge {
+    @apply text-grey font-semibold text-[0.75rem] leading-normal ml-2 py-[1px] px-1 rounded-full bg-lightGrey;
+  }
+}
